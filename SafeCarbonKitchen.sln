@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeManager.SharedTestHel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeManager.UnitTests", "RecipeManager\tests\RecipeManager.UnitTests\RecipeManager.UnitTests.csproj", "{EFCE7F54-E79E-469F-826E-96C7206A1201}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafeKitchenCra", "safeKitchenCra\SafeKitchenCra.csproj", "{64CCC0E6-E0AD-4EC2-A824-E7F82F9C060F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -92,6 +94,18 @@ Global
 		{EFCE7F54-E79E-469F-826E-96C7206A1201}.Release|x64.Build.0 = Release|Any CPU
 		{EFCE7F54-E79E-469F-826E-96C7206A1201}.Release|x86.ActiveCfg = Release|Any CPU
 		{EFCE7F54-E79E-469F-826E-96C7206A1201}.Release|x86.Build.0 = Release|Any CPU
+		{64CCC0E6-E0AD-4EC2-A824-E7F82F9C060F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64CCC0E6-E0AD-4EC2-A824-E7F82F9C060F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64CCC0E6-E0AD-4EC2-A824-E7F82F9C060F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{64CCC0E6-E0AD-4EC2-A824-E7F82F9C060F}.Debug|x64.Build.0 = Debug|Any CPU
+		{64CCC0E6-E0AD-4EC2-A824-E7F82F9C060F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{64CCC0E6-E0AD-4EC2-A824-E7F82F9C060F}.Debug|x86.Build.0 = Debug|Any CPU
+		{64CCC0E6-E0AD-4EC2-A824-E7F82F9C060F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64CCC0E6-E0AD-4EC2-A824-E7F82F9C060F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64CCC0E6-E0AD-4EC2-A824-E7F82F9C060F}.Release|x64.ActiveCfg = Release|Any CPU
+		{64CCC0E6-E0AD-4EC2-A824-E7F82F9C060F}.Release|x64.Build.0 = Release|Any CPU
+		{64CCC0E6-E0AD-4EC2-A824-E7F82F9C060F}.Release|x86.ActiveCfg = Release|Any CPU
+		{64CCC0E6-E0AD-4EC2-A824-E7F82F9C060F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3993299A-CC65-4A2A-9E2B-C93E241B8ECB} = {FEEE60E8-1F12-421F-8D00-09840A01E41D}
