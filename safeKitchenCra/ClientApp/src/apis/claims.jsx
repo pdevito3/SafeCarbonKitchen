@@ -13,18 +13,20 @@ const config = {
   }
 }
 
-const fetchClaims = async () => 
+const fetchClaims = async () =>
   axios.get('/bff/user', config)
     .then((res) => res.data);
 
 
 function useClaims() {
   return useQuery(
-    claimsKeys.claim, 
+    claimsKeys.claim,
     async () => fetchClaims(),
     {
+      staleTime: Infinity,
+      cacheTime: Infinity
     }
-  )  
+  )
 }
 
 export { useClaims as default }
