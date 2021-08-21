@@ -3,8 +3,6 @@ import { useQuery } from 'react-query';
 
 const claimsKeys = {
   claim: ['claims']
-  // claims: ['claims'],
-  // claims: (id) => [...claimsKeys.claims, id]
 }
 
 const config = {
@@ -24,7 +22,8 @@ function useClaims() {
     async () => fetchClaims(),
     {
       staleTime: Infinity,
-      cacheTime: Infinity
+      cacheTime: Infinity,
+      retry: false
     }
   )
 }

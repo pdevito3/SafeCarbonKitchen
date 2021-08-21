@@ -39,9 +39,15 @@ function Home() {
         )
       }
       {
-        <div className="py-10">
-          {recipes}
-        </div>
+        <ul className="py-10 space-y-2">
+          {
+            recipes && recipes.data.map(recipe => (
+              <li className="text-medium px-4 py-3 rounded-md border border-gray-20 shadow">
+                {recipe.name}
+              </li>
+            ))
+          }
+        </ul>
       }
     </div>
   )

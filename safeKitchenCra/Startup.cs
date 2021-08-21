@@ -1,5 +1,5 @@
 namespace SafeKitchenCra
-{    
+{
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Http;
@@ -9,7 +9,7 @@ namespace SafeKitchenCra
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
     using System;
-    
+
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -76,7 +76,7 @@ namespace SafeKitchenCra
                     RoleClaimType = "role"
                 };
             });
-            
+
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
@@ -107,7 +107,7 @@ namespace SafeKitchenCra
             app.UseAuthentication();
             app.UseBff();
             app.UseAuthorization();
-            
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapBffManagementEndpoints();
@@ -119,7 +119,7 @@ namespace SafeKitchenCra
 
                 // if you want the TODOs API remote
                 endpoints.MapRemoteBffApiEndpoint("/api/recipes", "https://localhost:8753/api/recipes")
-                    .WithOptionalUserAccessToken();
+                    .AllowAnonymous();
             });
 
             app.UseSpa(spa =>
