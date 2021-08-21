@@ -118,8 +118,8 @@ namespace SafeKitchenCra
                     .AsBffApiEndpoint();
 
                 // if you want the TODOs API remote
-                //endpoints.MapRemoteBffApiEndpoint("/todos", "https://localhost:5020/todos")
-                //    .RequireAccessToken(Duende.Bff.TokenType.User);
+                endpoints.MapRemoteBffApiEndpoint("/api/recipes", "https://localhost:8753/api/recipes")
+                    .WithOptionalUserAccessToken();
             });
 
             app.UseSpa(spa =>

@@ -1,8 +1,10 @@
 import React from 'react';
 import useClaims from '../apis/claims';
+import useRecipes from '../apis/recipes';
 
 function Home() {
   const { data: claims, isLoading } = useClaims();
+  const { data: recipes } = useRecipes();
   let logoutUrl = claims?.find(claim => claim.type === 'bff:logout_url') 
   let nameDict = claims?.find(claim => claim.type === 'name') ||  claims?.find(claim => claim.type === 'sub');
   let username = nameDict?.value; 
@@ -35,6 +37,11 @@ function Home() {
             </div>
           </div>
         )
+      }
+      {
+        <div className="py-10">
+          {recipes}
+        </div>
       }
     </div>
   )
